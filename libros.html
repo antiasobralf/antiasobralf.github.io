@@ -1,0 +1,96 @@
+<DOCTYPE html>
+	<html>
+
+	<head>
+		<title>Libro</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/css-libro.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="logo-contenedor">
+				<a href="Inicio.html"><img src="imagenes/logo-blanco.png" class="logo"></a>
+				<a href="Inicio.html"><img src="imagenes/logo-rojo.png" class="logo-rojo"></a>
+			</div>
+
+			<ul class="menu">
+				<li><a class="color2" href="Inicio.html"><strong>Inicio</strong></a></li>
+				<li><a class="color2" href="autor.html"><strong>Autor</strong></a></li>
+				<li><a class="color" href="libros.html"><strong>Libros</strong></a></li>
+				<li><a class="color2" href="formulario.html"><strong>Formulario</strong></a></li>
+				<li><a class="color2" href="peliculas.html"><strong>Peliculas</strong></a></li>
+				<li><a class="color2" href="Universo.html"><strong>Universo</strong></a></li>
+				<li><a class="color2" href="Menu.html"><strong>Menu</strong></a></li>
+			</ul>
+
+		</header>
+		<div>
+			<h1>Libros más conocidos de Sthepen King</h1>
+		</div>
+		<section class="cartas">
+			<article class="carta-d">
+				<img src="imagenes/libro1.webp">
+				<li>Misery</li>
+			</article>
+			<article class="carta-i">
+				<img src="imagenes/libro2.webp">
+				<li>Holly</li>
+			</article>
+			<article class="carta-d">
+				<img src="imagenes/libro3.webp">
+				<li>La cúpula</li>
+			</article>
+			<article class="carta-i">
+				<img src="imagenes/libro4.jpg">
+				<li>El visitante</li>
+			</article>
+
+			<article class="carta-i">
+				<img src="imagenes/libro5.png">
+				<li>Cuento De Hadas</li>
+			</article>
+			<article class="carta-d">
+				<img src="imagenes/libro6.png">
+				<li>La Mitad oscuras</li>
+			</article>
+			<article class="carta-i">
+				<img src="imagenes/libro7.png">
+				<li>Un Saco De Huesos</li>
+			</article>
+		</section>
+
+
+		<!-- ----------PIE DE PÁGINA---------------- -->
+
+
+		<footer>
+			<article class="pie1">
+				<ul>
+					<p>Estas en <a href="autor.html">autor</a></p>
+					<p>Página web creada por Antía Sobral</p>
+					<p>Proyecto de LM</p>
+				</ul>
+			</article>
+			<article class="pie2">
+				<ul>
+					<a href="#"><img src="imagenes/redes-f.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-i.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-y.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-t.jpg" class="logo"></a>
+				</ul>
+				<div>
+					<script>
+						var son = new Date();
+						var data = son.getDate() + "-" + (son.getMonth() + 1) + "-" + son.getFullYear();
+						var hora = son.getHours() + ":" + son.getMinutes();
+						document.write('Hoy es el día ' + data + "<br>");
+						document.write(" Son las " + hora);
+					</script>
+				</div>
+			</article>
+		</footer>
+
+	</body>
+
+	</html>

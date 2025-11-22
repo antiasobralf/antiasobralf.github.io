@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cuadros superpuestos a la derecha</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+  }
+
+  .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  /* posiciones iniciales en diagonal */
+  .green {
+    background: #2ecc71;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .blue {
+    background: #3498db;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+  }
+
+  .pink {
+    background: #e91e63;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+  }
+
+  /* movimiento a la derecha al hacer clic */
+  .box.active {
+    left: 250px; /* se mueve todos a la derecha */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box green" onclick="this.classList.toggle('active')"></div>
+  <div class="box blue" onclick="this.classList.toggle('active')"></div>
+  <div class="box pink" onclick="this.classList.toggle('active')"></div>
+</div>
+
+</body>
+</html>

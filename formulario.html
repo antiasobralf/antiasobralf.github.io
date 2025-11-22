@@ -1,0 +1,87 @@
+<DOCTYPE html>
+	<html>
+
+	<head>
+		<title>Formulario</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/css-formulario.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="logo-contenedor">
+				<a href="Inicio.html"><img src="imagenes/logo-blanco.png" class="logo"></a>
+				<a href="Inicio.html"><img src="imagenes/logo-rojo.png" class="logo-rojo"></a>
+			</div>
+
+			<ul class="menu">
+				<li><a class="color2" href="Inicio.html"><strong>Inicio</strong></a></li>
+				<li><a class="color2" href="autor.html"><strong>Autor</strong></a></li>
+				<li><a class="color2" href="libros.html"><strong>Libros</strong></a></li>
+				<li><a class="color" href="formulario.html"><strong>Formulario</strong></a></li>
+				<li><a class="color2" href="peliculas.html"><strong>Peliculas</strong></a></li>
+				<li><a class="color2" href="Universo.html"><strong>Universo</strong></a></li>
+				<li><a class="color2" href="Menu.html"><strong>Menu</strong></a></li>
+			</ul>
+
+		</header>
+
+
+
+		<main>
+			<form action="resultado.html" method="post" target="_blank">
+				<div>
+					<label for="usuario">Nombre</label>
+					<input type="text" name="usuario" id="usuario" placeholder="Nombre" required>
+				</div>
+				<div>
+					<label for="clave">Teléfono</label>
+					<input type="textarea" name="clave" id="clave" placeholder="669993847" required>
+				</div>
+				<div>
+					<label action="provincia">Provincia</label>
+					<select name="provincia" id="provincia">
+						<option>Selecciona Provincia</option>
+						<option value="15">Coruña</option>
+						<option value="27">Lugo</option>
+						<option value="32">Ourense</option>
+						<option value="36">Pontevedra</option>
+					</select>
+				</div>
+				<button>Enviar</button>
+			</form>
+
+		</main>
+
+		<!-- ----------PIE DE PAGINA---------------- -->
+
+
+		<footer>
+			<article class="pie1">
+				<ul>
+					<p>Estas en <a href="autor.html">autor</a></p>
+					<p>Página web creada por Antía Sobral</p>
+					<p>Proyecto de LM</p>
+				</ul>
+			</article>
+			<article class="pie2">
+				<ul>
+					<a href="#"><img src="imagenes/redes-f.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-i.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-y.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-t.jpg" class="logo"></a>
+				</ul>
+				<div>
+					<script>
+						var son = new Date();
+						var data = son.getDate() + "-" + (son.getMonth() + 1) + "-" + son.getFullYear();
+						var hora = son.getHours() + ":" + son.getMinutes();
+						document.write('Hoy es el día ' + data + "<br>");
+						document.write(" Son las " + hora);
+					</script>
+				</div>
+			</article>
+		</footer>
+	</body>
+
+	</html>
