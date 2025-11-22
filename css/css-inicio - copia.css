@@ -1,0 +1,417 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #232323;
+}
+
+header {
+	background-color: black;
+	display: flex;
+	align-items: center;
+	height: 140px;
+
+
+}
+
+.logo-contenedor {
+	position: relative;
+	margin-left: 200px;
+	align-items: center;
+	display: flex;
+
+}
+
+.logo {
+	width: 250px;
+	background-color: black;
+}
+
+.logo-rojo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+	width: 250px;
+	background-color: black;
+}
+
+.logo-contenedor:hover {
+	opacity: 1;
+}
+
+.logo-rojo:hover {
+	opacity: 1;
+}
+
+
+.menu {
+	display: flex;
+	margin-left: 35rem;
+	align-items: center;
+	width: 40%;
+	justify-content: right;
+
+}
+
+
+.menu li {
+	margin-left: 50px;
+	margin-right: 50px;
+	list-style: none;
+	font-size: 25px;
+}
+
+.menu li a {
+	text-decoration: none;
+
+}
+
+.color2 {
+	color: white;
+}
+
+.color2:hover {
+
+	color: #ff4444;
+	text-shadow: 0 0 20px #ff0000,
+		0 0 40px #ff0000;
+}
+
+.color {
+	color: #ff4444;
+	text-shadow: 0 0 20px #ff0000,
+		0 0 40px #ff0000;
+}
+
+/*-------------------cuerpo-------------------------*/
+
+.imagen {
+	background-image: url('../imagenes/fondo1.jpg');
+	height: 26em;
+	background-position: left -90px;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.imagen h1 {
+	color: white;
+	font-size: 80px;
+	margin-top: 10rem;
+}
+
+
+.cuadros {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+
+.cud1 {
+	height: 95px;
+	margin-top: 35px;
+	border-radius: 20px;
+	background-color: #c9c9c9;
+	display: flex;
+	align-items: center;
+}
+
+.cuadros a {
+	width: 20%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.cud1 li {
+	width: 100%;
+
+	justify-content: center;
+	text-align: center;
+}
+
+.cud1 img {
+
+	margin-top: 5px;
+}
+
+
+
+.cuadros article li {
+	list-style: none;
+	font-size: 25px;
+	text-align: center;
+
+
+}
+
+.cuadros a {
+	text-decoration: none;
+	color: black;
+
+}
+
+.cuadros a:hover {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #ff5c5c;
+	transition: 0.3s;
+	color: white;
+
+}
+
+
+.sec3 {
+	display: flex;
+	color: white;
+	align-items: flex-start;
+}
+
+
+
+
+
+
+
+.sec3_1 {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+
+}
+
+
+
+
+.noticia {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	margin-bottom: 50px;
+
+}
+
+.sec3_1 h2 {
+	font-size: 30px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.not {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+	padding: 15px;
+
+}
+
+.not li {
+	width: 100%;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.not a {
+	color: white;
+	text-decoration: none;
+}
+
+
+.not img {
+	width: 80%;
+	border-radius: 4px;
+}
+
+
+
+.sec3_2 {
+	width: 50%;
+}
+
+.sec3_2 h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+
+.fotos {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.fotos img {
+	width: 21%;
+	margin: 20px;
+	transition: 0.3s;
+
+}
+
+.fotos img:hover {
+	transform: scale(1.3);
+
+}
+
+.not li:hover {
+	text-decoration: underline;
+}
+
+
+.sec4 {
+	display: flex;
+	justify-content: center;
+}
+
+.sec4_1 h2{
+	justify-content: center;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	margin: 50px 0 20px;
+	color: white;
+}
+
+.sec4 article img{
+	border-radius: 25px;
+}
+
+
+/*-----------pie de página-----------------*/
+
+footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	height: 130px;
+	background-color: black;
+	color: #a1a1a1;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+
+
+
+}
+
+.pie1 {
+	margin-left: 20px;
+}
+
+.pie1 ul P a {
+	color: #a1a1a1;
+
+
+}
+
+
+
+.pie2 ul li {
+	list-style: none;
+
+}
+
+.pie2 ul img {
+	width: 30px;
+
+}
+
+
+
+.pie2 div {
+	margin-right: 10px;
+	margin-top: 10px;
+
+}
+
+/*--------medidas-------------*/
+
+
+@media (max-width: 1800px) {
+
+	body {
+		border: solid green;
+	}
+
+	.sec3_2 img {
+		width: 90%;
+	}
+
+
+}
+
+@media (max-width: 1400px) {
+	body {
+		border: solid red;
+	}
+
+	.imagen {
+		background-position: left 0px;
+
+	}
+
+	.cuadros article li {
+		font-size: 19px;
+
+	}
+
+	.sec3 {
+		display: block;
+	}
+
+	.sec3_1,
+	.sec3_2,
+	.sec3_3 {
+		width: 100%;
+	}
+
+	.sec3_1 img {
+		width: 30%;
+
+	}
+
+	.sec3_2 h2 {
+		margin-top: 50px;
+	}
+
+	.sec3_2 img {
+		width: 90%;
+	}
+
+	.sec3_3 figure img {
+		width: 20%;
+	}
+
+	.sec3_3 h2 {
+		margin-top: 50px;
+	}
+
+	.sec3_3 figure img:hover {
+		width: 23%;
+
+	}
+}

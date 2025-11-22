@@ -1,0 +1,225 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background-color: #232323; 
+}
+
+/*------------cabecera----------*/
+
+header {
+	background-color: black; 
+    display: flex;
+    align-items: center;
+    height: 140px;
+
+}
+.logo-contenedor {
+	position: relative;
+	margin-left: 200px;
+	align-items: center;
+	display: flex;
+	
+}
+
+.logo {
+	width: 250px;
+    background-color: black;
+}
+
+.logo-rojo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+	width: 250px;
+    background-color: black; 
+}
+
+.logo-contenedor:hover { 
+	opacity: 1; 
+} 
+
+.logo-rojo:hover { 
+	opacity: 1; 
+}
+
+
+.menu {
+	  display: flex;
+    margin-left: 35rem;
+    align-items: center;
+    width: 40%; 
+	justify-content: right;
+
+}
+
+.menu  li {
+	margin-left: 50px;
+	margin-right: 50px;
+	list-style: none;
+	font-size: 25px;
+}
+
+.menu li a {
+	text-decoration: none;
+	
+}
+
+
+.color2{
+	color: white;
+}
+
+.color2:hover {
+	color: #ff4444;
+	text-shadow: 0 0 20px #ff0000,
+		0 0 40px #ff0000;
+
+}
+
+.color{
+	color: #ff4444;
+	text-shadow: 0 0 20px #ff0000,
+		0 0 40px #ff0000;
+}
+
+
+
+/*------------cuerpo---------------*/
+
+div h1{
+	display: flex;
+	justify-content: center;
+}
+
+h1{
+	color: white;
+	font-size: 35px;
+	margin-top: 20px;
+}
+
+.cartas{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+
+
+
+.cartas  article{
+	width: 15%;
+	padding: 1.2%;
+	background-color: white;
+margin: 0px 50px;
+transition: all 1s;
+}
+
+.cartas article img{
+	width: 100%;
+	justify-content: center; 
+	
+	
+}
+
+.cartas article li{
+	list-style: none;
+	justify-content: center;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: -5px;
+
+	
+}
+
+.carta-d{
+	    transform: rotate(7deg);
+		
+}
+
+.carta-d img{
+	    filter: grayscale(1);
+		
+}
+
+.carta-i{
+	    transform: rotate(-7deg);
+		
+}
+
+.carta-i img{
+	    filter: grayscale(1);
+		
+}
+
+.carta-i:hover{
+	transform: rotate(0deg);
+	transition: 1s;
+}
+
+.carta-d:hover{
+	transform: rotate(0deg);
+	transition: 1s;
+	
+}
+
+.carta-d img:hover{
+	    filter: grayscale(0);
+		transition: 1s;
+}
+
+.carta-i img:hover{
+	    filter: grayscale(0);
+		transition: 0.5s;
+}
+
+/*-----------pie de pagina-----------------*/
+footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	height: 130px;
+	background-color: black;
+	color: #a1a1a1;
+	display: flex;
+	 justify-content: space-between;
+	align-items: start;
+	
+	  
+	
+}
+
+.pie1{
+	margin-left: 20px;
+}
+
+.pie1 ul P a{ 
+	color: #a1a1a1;
+
+	
+}
+
+
+
+.pie2 ul li{
+	list-style: none;
+	
+}
+
+.pie2 ul img{
+	width: 30px;
+	
+}
+
+
+
+.pie2 div{
+	margin-right: 10px;
+	margin-top: 10px;
+
+}
