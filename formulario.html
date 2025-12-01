@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 	<html>
 
 	<head>
@@ -8,50 +8,92 @@
 	</head>
 
 	<body>
+
+		<!---------------HEADER----------->
+
 		<header>
 			<div class="logo-contenedor">
-				<a href="index.html"><img src="imagenes/logo-blanco.png" class="logo"></a>
-				<a href="index.html"><img src="imagenes/logo-rojo.png" class="logo-rojo"></a>
+				<a href="Inicio.html"><img src="imagenes/logo-blanco.png" class="logo" alt="logob"></a>
+				<a href="Inicio.html"><img src="imagenes/logo-rojo.png" class="logo-rojo" alt="logor"></a>
 			</div>
-
-			<ul class="menu">
-				<li><a class="color2" href="index.html"><strong>Inicio</strong></a></li>
-				<li><a class="color2" href="autor.html"><strong>Autor</strong></a></li>
-				<li><a class="color2" href="libros.html"><strong>Libros</strong></a></li>
-				<li><a class="color" href="formulario.html"><strong>Formulario</strong></a></li>
-				<li><a class="color2" href="peliculas.html"><strong>Peliculas</strong></a></li>
-				<li><a class="color2" href="Universo.html"><strong>Universo</strong></a></li>
-				<li><a class="color2" href="Menu.html"><strong>Menu</strong></a></li>
-			</ul>
-
+			<nav>
+				<ul class="menu">
+					<li><a class="color2" href="Inicio.html"><strong>Inicio</strong></a></li>
+					<li><a class="color2" href="autor.html"><strong>Autor</strong></a></li>
+					<li><a class="color2" href="libros.html"><strong>Libros</strong></a></li>
+					<li><a class="color" href="formulario.html"><strong>Formulario</strong></a></li>
+					<li><a class="color2" href="peliculas.html"><strong>Peliculas</strong></a></li>
+					<li><a class="color2" href="Universo.html"><strong>Universo</strong></a></li>
+					<li><a class="color2" href="Menu.html"><strong>Menu</strong></a></li>
+				</ul>
+			</nav>
 		</header>
 
+		<!---------------CUERPO----------->
 
+			<main>
+		<form action="resultado.html" method="get" target="_blank">
+			<div class="f1">
+				<label for="usuario">Nombre</label>
+				<input type="text" name="usuario" id="usuario" placeholder="Nombre" required>
+			</div>
+			<div class="f1">
+				<label for="clave">Teléfono</label>
+				<input type="text" name="clave" id="clave" placeholder="669993847" required>
+			</div>
+			<div class="f1">
+				<label for="provincia">Provincia</label>
+				<select name="provincia" id="provincia">
+					<option>Selecciona Provincia</option>
+					<option value="15">Coruña</option>
+					<option value="27">Lugo</option>
+					<option value="32">Ourense</option>
+					<option value="36">Pontevedra</option>
+				</select>
+			</div>
+			<div class="edad">
+				<li>Edad</li>
+				<div class="e2">
+					<div>
+						<input type="radio" id="rango1" name="edad" value="0-20">
+						<label for="rango1">0-20</label>
+					</div>
+					<div>
+						<input type="radio" id="rango2" name="edad" value="21-40" checked>
+						<label for="rango2">21-40</label>
+					</div>
+					<div>
+						<input type="radio" id="rango3" name="edad" value="41-60">
+						<label for="rango3">41-60</label>
+					</div>
+					<div>
+						<input type="radio" id="rango4" name="edad" value="61-100">
+						<label for="rango4">61-100</label>
+					</div>
+				</div>
+			</div>
+		
 
-		<main>
-			<form action="resultado.html" method="post" target="_blank">
-				<div>
-					<label for="usuario">Nombre</label>
-					<input type="text" name="usuario" id="usuario" placeholder="Nombre" required>
-				</div>
-				<div>
-					<label for="clave">Teléfono</label>
-					<input type="textarea" name="clave" id="clave" placeholder="669993847" required>
-				</div>
-				<div>
-					<label action="provincia">Provincia</label>
-					<select name="provincia" id="provincia">
-						<option>Selecciona Provincia</option>
-						<option value="15">Coruña</option>
-						<option value="27">Lugo</option>
-						<option value="32">Ourense</option>
-						<option value="36">Pontevedra</option>
-					</select>
-				</div>
-				<button>Enviar</button>
-			</form>
+			<div class="botones">
+                    <button type="submit" class="boton_enviar">Enviar formulario</button>
+                    <button type="reset" class="boton_borrar">Borrar formulario</button>
+                </div>
+		</form>
+	</main>
 
-		</main>
+		<section class="galeria">
+
+			<figure class="fotos">
+				<img src="imagenes/grupo.webp" alt="grupo">
+				<img src="imagenes/padre_c.jpeg" alt="padre">
+				<img src="imagenes/u-3.jpeg" alt="imagen3">
+				<img src="imagenes/pelicula4.png" alt="pelicula">
+			</figure>
+			<figure class="fotogrande">
+				<img src="imagenes/noticia1.jpg" alt="PAN">
+			</figure>
+		</section>
+
 
 		<!-- ----------PIE DE PAGINA---------------- -->
 
@@ -59,17 +101,17 @@
 		<footer>
 			<article class="pie1">
 				<ul>
-					<p>Estas en <a href="autor.html">autor</a></p>
-					<p>Página web creada por Antía Sobral</p>
-					<p>Proyecto de LM</p>
+					<li>Estas en <a href="formulario.html">Formulario</a></li>
+					<li>Página web creada por Antía Sobral</li>
+					<li>Proyecto de LM</li>
 				</ul>
 			</article>
 			<article class="pie2">
 				<ul>
-					<a href="#"><img src="imagenes/redes-f.jpg" class="logo"></a>
-					<a href="#"><img src="imagenes/redes-i.jpg" class="logo"></a>
-					<a href="#"><img src="imagenes/redes-y.jpg" class="logo"></a>
-					<a href="#"><img src="imagenes/redes-t.jpg" class="logo"></a>
+					<a href="#"><img src="imagenes/redes-f.jpg" class="logo" alt="rede1"></a>
+					<a href="#"><img src="imagenes/redes-i.jpg" class="logo" alt="rede2"></a>
+					<a href="#"><img src="imagenes/redes-y.jpg" class="logo" alt="rede3"></a>
+					<a href="#"><img src="imagenes/redes-t.jpg" class="logo" alt="rede4"></a>
 				</ul>
 				<div>
 					<script>

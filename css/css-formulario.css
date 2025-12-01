@@ -4,11 +4,24 @@
 	box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #232323;
+    justify-content:space-between;
+}
+
+
+
+/*----------------HEADER-----------*/
+
+
 header {
 	background-color: black;
-    display: flex;
-    align-items: center;
-    height: 140px;
+	display: flex;
+	align-items: center;
+	height: 140px;
 
 }
 
@@ -45,19 +58,16 @@ header {
 }
 
 .menu {
-	  display: flex;
-    margin-left: 35rem;
+    display: flex;
+    margin-left: auto; 
     align-items: center;
-    width: 40%; 
-
+    width: auto; 
+    justify-content: flex-end;
 }
 
-.menu {
-	list-style: none;
-	justify-content: right;
-}
 
-.menu  li {
+
+.menu li {
 	margin-left: 50px;
 	margin-right: 50px;
 	list-style: none;
@@ -66,10 +76,9 @@ header {
 
 .menu li a {
 	text-decoration: none;
-	
 }
 
-.color2{
+.color2 {
 	color: white;
 }
 
@@ -80,117 +89,212 @@ header {
 		0 0 40px #ff0000;
 }
 
-.color{
+.color {
 	color: #ff4444;
 	text-shadow: 0 0 20px #ff0000,
 		0 0 40px #ff0000;
 }
 
 
-/*----------------cabecera----------*/
+
+/*----------------CUERPO----------------*/
 
 
-body{
-	background-color: #232323; 
+
+body {
+	background-color: #232323;
 	color: white;
-	
 }
 
 main {
 
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: -80px;
 }
 
 form {
-   	padding: 5%;
-    width: 50%;
-    border: solid 1px white;
-    text-align: center;
+	padding: 5%;
+	width: 50%;
+	border: solid 1px white;
+	text-align: center;
 	background-color: #575757;
-
-  
+height: 75%;
 
 }
 
 form div {
-    padding: 0.5rem;
+	padding: 0.5rem;
 	display: flex;
 }
 
-label {
-    width: 20%;
-    text-align: left;
+.f1 label {
+	width: 20%;
+	text-align: left;
 }
 
-input, select {
-    width: 80%;
-    padding: 0.4rem;
+.f1 input,
+.f1 select {
+	width: 80%;
+	padding: 0.4rem;
 	border-radius: 10px;
 	margin-left: -50px;
 }
 
 
-input:focus, select:focus{
+input:focus,
+select:focus {
 	background-color: #cecece;
 }
 
+
+
+.galeria {
+
+	display: flex;
+	margin-top: 20px;
+	padding: 8px;
+	height: 600px;
+	margin-bottom: -40px;
+}
+
+.fotogrande {
+	width: 50%;
+}
+
+.fotogrande img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fotos {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fotos img {
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+}
+
+.e2{
+	display: block;
+	margin-left: 55px;
+	
+}
+
+.edad li{
+	list-style: none;
+}
+
+.e2 label{
+	margin-left: 5px;
+
+}
+
+.e2 input{
+	display: flex;
+
+}
+
+
+.botones{
+
+	justify-content: center;
+margin-top: -20px;
+}
+
 button {
-    margin: 1rem 0 0;
-    padding: 0.5rem 1rem;
+	margin: 1rem 0 0;
+	padding: 0.5rem 1rem;
 	background-color: white;
+	border-radius: 10px;
 }
 
-button:hover, button:focus{
+.boton_enviar:hover,
+.boton_enviar:focus {
+	background-color: #52a51a;
+	color: white;
+}
+
+.boton_borrar:hover,
+.boton_borrar:focus {
 	background-color: #ff6e6e;
+		color: white;
 }
 
+/*-----------FOOTER-----------------*/
 
-/*-----------pie de página-----------------*/
 
-footer{
+footer {
 	margin-top: 30px;
 	padding-top: 35px;
 	height: 130px;
 	background-color: black;
 	color: #a1a1a1;
 	display: flex;
-	 justify-content: space-between;
+	justify-content: space-between;
 	align-items: start;
-	
-	  
-	
+
 }
 
-.pie1{
+.pie1 {
 	margin-left: 20px;
 }
 
-.pie1 ul P a{ 
+.pie1 ul{
+	list-style: none;
+}
+
+.pie1 ul li a {
 	color: #a1a1a1;
 
-	
 }
 
-
-
-.pie2 ul li{
+.pie2 ul li {
 	list-style: none;
-	
+
 }
 
-.pie2 ul img{
+.pie2 ul img {
 	width: 30px;
-	
+
 }
 
-
-
-.pie2 div{
+.pie2 div {
 	margin-right: 10px;
 	margin-top: 10px;
-
 }
 
+
+
+/*---------------MEDIA-------------*/
+
+
+@media screen and (max-width: 1600px) {
+	.logo-contenedor {
+		margin-left: 50px;
+	}
+
+	.menu {
+		margin-left: 10px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: right;
+	}
+
+	.menu li {
+		margin: 10px;
+		font-size: 20px;
+	}
+
+	main form div label {
+		margin-right: 90px;
+	}
+}

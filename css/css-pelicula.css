@@ -4,15 +4,23 @@
 	box-sizing: border-box;
 }
 
-/*---------------cabecera-------*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #232323;
+    justify-content:space-between;
+}
+
+
+/*---------------HEADER---------------*/
 
 header {
 	background-color: black;
-    display: flex;
-    align-items: center;
-    height: 140px;
+	display: flex;
+	align-items: center;
+	height: 140px;
 	margin-bottom: 30px;
-
 }
 
 .logo {
@@ -26,7 +34,6 @@ header {
 	margin-left: 200px;
 	align-items: center;
 	display: flex;
-
 }
 
 .logo-rojo {
@@ -34,7 +41,7 @@ header {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transition: opacity 0.3s;
+	transition: 0.3s;
 	width: 250px;
 }
 
@@ -48,19 +55,14 @@ header {
 }
 
 .menu {
-	  display: flex;
-    margin-left: 35rem;
+    display: flex;
+    margin-left: auto; 
     align-items: center;
-    width: 40%; 
-
+    width: auto; 
+    justify-content: flex-end;
 }
 
-.menu {
-	list-style: none;
-	justify-content: right;
-}
-
-.menu  li {
+.menu li {
 	margin-left: 50px;
 	margin-right: 50px;
 	list-style: none;
@@ -72,7 +74,7 @@ header {
 
 }
 
-.color2{
+.color2 {
 	color: white;
 }
 
@@ -83,213 +85,205 @@ header {
 		0 0 40px #ff0000;
 }
 
-.color{
+.color {
 	color: #ff4444;
 	text-shadow: 0 0 20px #ff0000,
 		0 0 40px #ff0000;
 }
-/*--------------------------------cuerpo--------------------------------------------*/
+
+/*----------------------CUERPO------------------------------*/
 
 
-
-body{
-	background-color: #232323; 
+body {
+	background-color: #232323;
 	color: white;
-	
-	
 }
 
 
-.sec1{
+.sec1 {
 	display: flex;
 	margin-top: 30px;
-	margin-bottom: 35	px;
+	margin-bottom: 35px;
 }
 
 
-.sec1 article{
+.sec1 article {
 	width: 45%;
 	display: flex;
 	justify-content: center;
-
-	
 }
 
-
-
-
-
-.art1{
-
+.art1 {
 	margin-left: 35px;
-	
 }
 
-.art2{
-
+.art2 {
 	margin-left: 35px;
 	border-radius: 25px;
 	background-color: #390b0b;
 	padding: 30px;
 
-	
+
 }
 
-.sec1 article p{
+.sec1 article p {
 	align-content: center
-	
 }
 
-.sec1 article img{
+.sec1 article img {
 	width: 90%;
 	justify-content: center;
 	border-radius: 25px;
-	
 }
 
-
-.t1{
+.t1 {
 	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 }
 
-
-
-
-
-.pelicula{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px;
+.pelicula {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 20px;
 }
 
-.pelicula article{
-    width: 400px;
-    height: 380px;
-	
-    position: relative;
-    border-radius: 40px;
-    overflow: hidden; 
-    background: black;
-    cursor: pointer;
-transition: all 1s;
-
-
-
-}
-
-
-.pelicula article img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(1);
-    transition: 1s;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.pelicula article p,
-.pelicula article h1{
-    color: white;
-    position: absolute;
-    z-index: 10;
-    opacity: 0;
-	
-    transition: 1s;
-
-	
-
-}
-
-.pelicula article h1{
-    top: 20px;
-    left: 20px;
-    font-size: 20px;
-	
-	
-}
-
-.pelicula article p{
-    bottom: 80px;
-    left: 20px;
-    width: 85%;
-    font-size: 14px;
-
-	
-	
-}
-
-.pelicula article:hover{
-	width: 550px;
+.pelicula article {
+	width: 400px;
+	height: 380px;
+	position: relative;
+	border-radius: 40px;
+	overflow: hidden;
+	background: black;
+	cursor: pointer;
 	transition: all 1s;
 
 }
 
-.pelicula article:hover img{
-    filter: brightness(0.4);
+
+.pelicula article img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(1);
+	transition: 1s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pelicula article p,
+.pelicula article h1 {
+	color: white;
+	position: absolute;
+	z-index: 10;
+	opacity: 0;
+	transition: 1s;
+}
+
+.pelicula article h1 {
+	top: 20px;
+	left: 20px;
+	font-size: 20px;
+}
+
+.pelicula article p {
+	bottom: 80px;
+	left: 20px;
+	width: 85%;
+	font-size: 14px;
+}
+
+.pelicula article:hover {
+	transform: scale(1.10);
+	transition: all 0.3s;
+
+}
+
+.pelicula article:hover img {
+	filter: brightness(0.4);
 }
 
 .pelicula article:hover p,
-.pelicula article:hover h1{
-    opacity: 1;
-	
+.pelicula article:hover h1 {
+	opacity: 1;
+
 }
 
+/*-----------FOOTER-----------------*/
 
-
-
-
-
-
-
-/*-----------pie de página-----------------*/
-
-footer{
+footer {
 	margin-top: 30px;
 	padding-top: 35px;
 	height: 130px;
 	background-color: black;
 	color: #a1a1a1;
 	display: flex;
-	 justify-content: space-between;
+	justify-content: space-between;
 	align-items: start;
-	
-	  
-	
+
 }
 
-.pie1{
+.pie1 {
 	margin-left: 20px;
 }
 
-.pie1 ul P a{ 
+.pie1 ul{
+	list-style: none;
+}
+
+.pie1 ul li a {
 	color: #a1a1a1;
 
-	
 }
 
-
-
-.pie2 ul li{
+.pie2 ul li {
 	list-style: none;
-	
+
 }
 
-.pie2 ul img{
+.pie2 ul img {
 	width: 30px;
-	
+
 }
 
-
-
-.pie2 div{
+.pie2 div {
 	margin-right: 10px;
 	margin-top: 10px;
+}
+
+
+/*---------------MEDIA-----------------*/
+
+
+@media screen and (max-width: 1600px) {
+	.logo-contenedor {
+		margin-left: 50px;
+	}
+
+	.menu {
+		margin-left: 10px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: right;
+	}
+
+	.menu li {
+		margin: 10px;
+		font-size: 20px;
+	}
+
+	.sec1 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sec1 article {
+		width: 90%;
+		margin: 10px 0;
+	}
 
 }

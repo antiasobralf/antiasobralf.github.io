@@ -1,45 +1,47 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-body{
-	background-color: #232323; 
-	color: white;
-	
-	
+body {
+    background-color: #232323;
+    color: white;
 }
 
-section{
+/*-------------CUERPO-------------*/
+
+.sec1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
 }
 
-section h1{
-  
+.sec1 h1 {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
 }
 
-section img{
+.sec1 img {
     width: 5%;
 }
 
+.fot1{
+    display: flex;
+    justify-content: center;
+}
 
-.fot1 img{
-    width: 50%;
+.fot1 img {
+    width: 60%;
     border-radius: 25px;
 }
 
 
-div{
+div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,16 +49,30 @@ div{
     background-color: brown;
     padding: 20px;
     height: 90px;
-    position: fixed; 
-    bottom: 0;     
- 
+    position: fixed;
+    bottom: 0;
+
 }
 
-div a{
+div a {
     text-decoration: none;
     color: white;
 }
 
-div p:hover{
+div p:hover {
     text-decoration: underline;
+}
+
+
+/*--------------MEDIA---------------*/
+
+@media screen and (max-width: 1600px) {
+	.fot1{
+        margin-top: 80px;
+    }
+    
+    .fot1 img{
+      width: 80%;
+    }
+
 }

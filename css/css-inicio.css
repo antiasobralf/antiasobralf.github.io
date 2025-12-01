@@ -6,16 +6,20 @@
 }
 
 body {
-	background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #232323;
+    justify-content:space-between;
 }
+
+/*------------HEADER----------------*/
 
 header {
 	background-color: black;
 	display: flex;
 	align-items: center;
 	height: 140px;
-
-
 }
 
 .logo-contenedor {
@@ -23,7 +27,6 @@ header {
 	margin-left: 200px;
 	align-items: center;
 	display: flex;
-
 }
 
 .logo {
@@ -36,7 +39,7 @@ header {
 	top: 0;
 	left: 0;
 	opacity: 0;
-	transition: opacity 0.3s;
+	transition: 0.3s;
 	width: 250px;
 	background-color: black;
 }
@@ -51,12 +54,11 @@ header {
 
 
 .menu {
-	display: flex;
-	margin-left: 35rem;
-	align-items: center;
-	width: 40%;
-	justify-content: right;
-
+    display: flex;
+    margin-left: auto; 
+    align-items: center;
+    width: auto; 
+    justify-content: flex-end;
 }
 
 
@@ -89,7 +91,8 @@ header {
 		0 0 40px #ff0000;
 }
 
-/*-------------------cuerpo-------------------------*/
+
+/*-------------------CUERPO-------------------------*/
 
 .imagen {
 	background-image: url('../imagenes/fondo1.jpg');
@@ -98,8 +101,6 @@ header {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-
-
 }
 
 .imagen h1 {
@@ -130,12 +131,10 @@ header {
 	width: 20%;
 	text-align: center;
 	display: flex;
-	flex-direction: column; 
-    color: black;
-    transition: 0.3s;
+	flex-direction: column;
+	color: black;
+	transition: 0.3s;
 }
-
-
 
 .cud1 li {
 	width: 100%;
@@ -149,35 +148,29 @@ header {
 	margin-top: 5px;
 }
 
-
-
 .cuadros article li {
 	list-style: none;
 	font-size: 25px;
 	text-align: center;
-
 
 }
 
 .cuadros a {
 	text-decoration: none;
 	color: black;
-
 }
-
 
 .cuadros a:hover {
-    background-color: #ff5c5c;
-    color: white;
-    box-shadow: 15px 15px 15px black;
-    transform: translateY(-10px);
+	background-color: #ff5c5c;
+	color: white;
+	box-shadow: 15px 15px 15px black;
+	transform: translateY(-10px);
 }
 
 
-.cuadros a:hover img{
-	    filter: invert(100%)  saturate(0);
+.cuadros a:hover img {
+	filter: invert(100%) saturate(0);
 }
-
 
 .sec3 {
 	color: white;
@@ -189,14 +182,11 @@ header {
 	flex-direction: column;
 	display: flex;
 	align-items: center;
-
-
 }
 
 .sec3_1,
 .sec3_3 {
 	width: 20%;
-
 }
 
 .sec3_2 {
@@ -204,22 +194,17 @@ header {
 
 }
 
-
-
-
 .sec3_1 li {
 	list-style: none;
 	color: white;
 	margin-top: 5px;
 	margin-left: 30px;
-
 }
 
 .sec3_1 li:hover {
 	text-decoration: underline;
 
 }
-
 
 .sec3_1 li a {
 	text-decoration: none;
@@ -228,20 +213,17 @@ header {
 }
 
 
-
-
 .sec3_1 img {
 	width: 40%;
 	margin-top: 10px;
-
 }
 
 .sec3_2 img {
 	margin-top: 35px;
 	border-radius: 50px;
+	width: 90%;
 
 }
-
 
 .fotos {
 	width: 100%;
@@ -249,9 +231,6 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 30px;
-
-
-
 }
 
 .fotos img {
@@ -276,8 +255,8 @@ header {
 }
 
 
+/*-----------------FOOTER-----------------*/
 
-/*-----------pie de página-----------------*/
 
 footer {
 	margin-top: 30px;
@@ -289,21 +268,20 @@ footer {
 	justify-content: space-between;
 	align-items: start;
 
-
-
 }
 
 .pie1 {
 	margin-left: 20px;
 }
 
-.pie1 ul P a {
-	color: #a1a1a1;
-
-
+.pie1 ul{
+	list-style: none;
 }
 
+.pie1 ul li a {
+	color: #a1a1a1;
 
+}
 
 .pie2 ul li {
 	list-style: none;
@@ -315,11 +293,78 @@ footer {
 
 }
 
-
-
 .pie2 div {
 	margin-right: 10px;
 	margin-top: 10px;
-
 }
 
+
+
+/*-----------MEDIA--------------*/
+
+@media screen and (max-width: 1600px) {
+	.logo-contenedor {
+		margin-left: 50px;
+	}
+
+	.menu {
+		margin-left: 10px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: right;
+	}
+
+	.menu li {
+		margin: 10px;
+		font-size: 20px;
+	}
+
+	.cuadros {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.cuadros a {
+		width: 45%;
+		margin-bottom: 20px;
+	}
+
+	.sec3 {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sec3_1,
+	.sec3_3 {
+		width: 90%;
+		border-right: none;
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.sec3_2 {
+		width: 90%;
+		padding: 20px;
+		border: none;
+		border-top: solid 2px grey;
+		border-bottom: solid 2px grey;
+	}
+
+	.sec3_3 {
+		margin-top: 30px;
+	}
+
+	.fotos img {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	.imagen {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
